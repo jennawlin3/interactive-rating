@@ -73,10 +73,12 @@ input[type="radio"] {
 	text-decoration: none;
 	box-shadow: 2px 2px 2px var(--very-dark-blue);
 	color: var(--light-grey);
+	font-weight: 400;
 }
 
-.rating-number:active {
-	color: var(--medium-grey);
+.active {
+	background-color: var(--medium-grey);
+	color: var(--white);
 }
 
 .rating-number:hover {
@@ -92,6 +94,7 @@ input[type="radio"] {
 	color: var(--white); 
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	border: none;
 }
 
 #submit:hover {
@@ -125,3 +128,4 @@ input[type="radio"] {
 	height: auto;
 }
 }
+
