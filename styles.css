@@ -1,0 +1,127 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--orange: hsl(25, 97%, 53%);
+	--white: hsl(0, 0%, 100%);
+	--light-grey: hsl(217, 12%, 63%);
+	--medium-grey: hsl(216, 12%, 54%);
+	--dark-blue: hsl(213, 19%, 18%);
+	--very-dark-blue: hsl(216, 12%, 8%);
+}
+
+body {
+	background-color: var(--very-dark-blue);
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--dark-blue);
+	border-radius: 20px;
+	margin: 30vh auto;
+	padding: 30px;
+	width: 90vw;
+	height: auto;
+}
+
+.rating-btn {
+	display: inline-flex;
+	align-content: center;
+	background-color: #34404e;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.star-btn {
+	background: url(images/icon-star.svg);
+	background-repeat: no-repeat;
+	padding: 10px;
+}
+
+.rating h1, #result h2 {
+	color: var(--white);
+	padding: 20px 0;
+}
+
+p {
+	color: var(--light-grey);
+	padding-bottom: 20px;
+	line-height: 1.7;
+}
+
+.rating-stat {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+	margin-bottom: 30px;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.rating-number {
+	background-color: #34404e;
+	padding: 15px 20px;
+	border-radius: 50%;
+	text-decoration: none;
+	box-shadow: 2px 2px 2px var(--very-dark-blue);
+	color: var(--light-grey);
+}
+
+.rating-number:active {
+	color: var(--medium-grey);
+}
+
+.rating-number:hover {
+	background-color: var(--orange);
+	color: var(--white);
+}
+
+#submit {
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	background-color: var(--orange);
+	color: var(--white); 
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+#submit:hover {
+	background-color: var(--white);
+	color: var(--orange);
+}
+
+#result {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: none;
+}
+
+.result-msg {
+	background-color: #34404e;
+	margin-top: 30px;
+	padding: 6px 10px;
+	border-radius: 20px;
+	color: var(--orange);
+	box-shadow: 2px 2px 2px var(--very-dark-blue);
+}
+
+#result p {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+	width: 400px;
+	height: auto;
+}
+}
