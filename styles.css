@@ -68,7 +68,7 @@ input[type="radio"] {
 
 .rating-number {
 	background-color: #34404e;
-	padding: 15px 20px;
+	padding: 20px 25px;
 	border-radius: 50%;
 	text-decoration: none;
 	box-shadow: 2px 2px 2px var(--very-dark-blue);
@@ -81,9 +81,10 @@ input[type="radio"] {
 	color: var(--white);
 }
 
-.rating-number:hover {
+.rating-number:hover, .number:hover {
 	background-color: var(--orange);
 	color: var(--white);
+	cursor: pointer;
 }
 
 #submit {
@@ -95,6 +96,7 @@ input[type="radio"] {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	border: none;
+	cursor: pointer;
 }
 
 #submit:hover {
@@ -126,6 +128,10 @@ input[type="radio"] {
 	.container {
 	width: 400px;
 	height: auto;
+}
+
+.rating-number {
+	padding: 15px 20px;
 }
 }
 
